@@ -26,10 +26,10 @@
         link: function(scope) {}
       }
     })
-    .directive('userData', function() {
+    .directive('userData', () => {
       return {
         restrict: 'A',
-        link: function(scope) {
+        link: scope => {
           scope.users = [
             {
               "id": 1,
